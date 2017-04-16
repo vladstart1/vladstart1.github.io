@@ -21,4 +21,12 @@ $(function() {
 		}
 	});
 
+	function carouselService() {
+		$('.carousel-portfolio-item').each(function(){
+			var ths = $(this)
+			thsh= ths.find('.carousel-portfolio-cont').outerHeight();
+			ths.find('.carousel-portfolio-image').css('min-height', thsh);
+		});
+	}carouselService();
+
 });
