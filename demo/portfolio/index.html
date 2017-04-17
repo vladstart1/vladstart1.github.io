@@ -32,15 +32,17 @@
 
 <div class="is-home">
 	
-<header class="main-head">
+<header class="main-head" id="head">
 	
-<nav>
+<nav class="menu default">
 	<ul>
-		<li><a href="#">Главная</a></li>
-		<li><a href="#">О нас</a></li>
-		<li><a href="#">Наши работы</a></li>
-		<li><a href="#">Отзывы</a></li>
-		<li><a href="#">Контакты</a></li>
+		<li><a href="#head">Главная</a></li>
+		<li><a href="#about">О нас</a></li>
+		<li><a href="#portfolio">Портфолио</a></li>
+		<li><a href="#work">Мы делаем</a></li>
+		<li><a href="#steps">Процес создания</a></li>
+		<li><a href="#rew">Отзывы</a></li>
+		<li><a href="#feedback">Контакты</a></li>
 	</ul>
 </nav>
 <div class="header-cont" align="center">
@@ -57,7 +59,7 @@
 </header>
 
 
-<section class="about">
+<section class="about" id="about">
 <div class="container">
 <div class="row">
 <div class="about-cont">	
@@ -107,7 +109,7 @@
 </div>
 </section>
 
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
 	<div class="h3_title"><h3 class="h3">Наши работы</h3></div>
 	<div class="owl-carousel carousel-portfolio">
 		<!-- Item -->
@@ -170,7 +172,7 @@
 	</div>
 </section>
 
-<section class="uslugi">
+<section class="uslugi" id="work">
 <div class="h3_title"><h3 class="h3">Мы делаем</h3></div>
 
 	<!-- Item -->
@@ -226,7 +228,7 @@
 
 </section>
 
-<section class="steps">
+<section class="steps" id="steps">
 	<div class="h3_title"><h3 class="h3">5 шагов</h3></div>
 
 <div class="steps-cont">
@@ -285,7 +287,7 @@
 
 </section>
 
-<section class="reviews">
+<section class="reviews" id="rew">
 	
 <div class="h3_title"><h3 class="h3">Отзывы клиентов</h3></div>
 
@@ -293,7 +295,7 @@
 
 <!-- Item start -->
 	<div class="reviews-cont-item">
-		<img src="img/iphone360_37859.jpg" alt="">
+		<div class="reviews-cont-img" style="background-image: url(img/iphone360_37859.jpg);"></div>
 		<div class="reviews-cont-title">
 			<strong>Александр Пархоменко</strong>
 			<p>Коммерческий директор "DJ.fm"</p>
@@ -304,7 +306,7 @@
 
 <!-- Item start -->
 	<div class="reviews-cont-item">
-		<img src="img/iphone360_37859.jpg" alt="">
+		<div class="reviews-cont-img" style="background-image: url(img/iphone360_37859.jpg);"></div>
 		<div class="reviews-cont-title">
 			<strong>Александр Пархоменко</strong>
 			<p>Коммерческий директор "DJ.fm"</p>
@@ -315,7 +317,7 @@
 
 <!-- Item start -->
 	<div class="reviews-cont-item">
-		<img src="img/iphone360_37859.jpg" alt="">
+		<div class="reviews-cont-img" style="background-image: url(img/iphone360_37859.jpg);"></div>
 		<div class="reviews-cont-title">
 			<strong>Александр Пархоменко</strong>
 			<p>Коммерческий директор "DJ.fm"</p>
@@ -328,8 +330,29 @@
 
 </section>
 
-<footer class="footer">
-	
+<section class="footer" id="feedback">
+	<div class="contacts">
+		<ul>
+			<li><strong>Телефон:</strong> <a href="tel:+380731571334">+38 (073) 157 13 34</a></li>
+			<li><strong>E-mail:</strong> <a href="mailto: vladstart1@hotmail.com">vladstart1@hotmail.com</a></li>
+			<li><strong>Skype:</strong> <a href="skype: vladstart1">vladstart1</a></li>
+			<li><strong>ПН-ПТ:</strong> c 9:00 до 18:00</li>
+			<li><strong>СБ-ВС:</strong> выходные</li>
+		</ul>
+	</div>
+	<div class="feedback">
+		<p>Остались вопросы? Напишите нам:</p>
+		<form>
+			<input type="text" placeholder="Ваше имя">
+			<input type="text" placeholder="Ваше телефон">
+			<textarea name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+			<button class="button">Отправить</button>
+		</form>
+	</div>
+</section>
+
+<footer>
+	<p>Веб-студия OpenMind © Все права защищены.</p>
 </footer>
 
 </div>
