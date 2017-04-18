@@ -45,6 +45,10 @@ $(function() {
                            .addClass("default")
                            .fadeIn('fast');
                 });
+            } else if($(window).width() <= '768') {
+              
+                    $menu.removeClass("fixed")
+                           .removeClass("default");
             }
         });//scroll
 
@@ -62,7 +66,45 @@ $(".menu").on("click","a", function (event) {
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
 
-    
+$("#my-menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
+$("#my-menu").mmenu({
+               "slidingSubmenus": false,
+               "extensions": [
+                  "pagedim-black"
+               ],
+               "navbars": [
+                  {
+                     "position": "bottom",
+                     "content": [
+                        "<a class='fa fa-envelope' href='#/'></a>",
+                        "<a class='fa fa-twitter' href='#/'></a>",
+                        "<a class='fa fa-facebook' href='#/'></a>"
+                     ]
+                  }
+               ]
+            });
+
+$(".mobile-menu").click(function() {
+	var mmAPI = $("#my-menu").data( "mmenu" );
+	mmAPI.open();
+  var thiss = $(this).find(".toggle-mnu");
+  $(this).toggleClass("on");
+  $(".main-mnu").slideToggle();
+  return false;
+});
 
 
 });

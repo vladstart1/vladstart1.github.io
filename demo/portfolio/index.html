@@ -33,8 +33,22 @@
 <div class="is-home">
 	
 <header class="main-head" id="head">
-	
-<nav class="menu default hide-cont">
+<div class="mobile-menu hidden-lg hidden-md">
+<a href="#" class="toggle-mnu hidden-lg hidden-md"><span></span></a> <b>Меню</b>
+</div>
+
+<nav id="my-menu">
+   <ul>
+		<li><a href="#about">О нас</a></li>
+		<li><a href="#portfolio">Портфолио</a></li>
+		<li><a href="#work">Мы делаем</a></li>
+		<li><a href="#steps">Процес создания</a></li>
+		<li><a href="#rew">Отзывы</a></li>
+		<li><a href="#feedback">Контакты</a></li>
+	</ul>
+</nav>
+
+<nav class="menu default hidden-sm hidden-xs">
 	<ul>
 		<li><a href="#about">О нас</a></li>
 		<li><a href="#portfolio">Портфолио</a></li>
@@ -58,7 +72,7 @@
 </header>
 
 
-<section class="about" id="about">
+<section class="about tracked" id="about">
 <div class="container">
 <div class="row">
 <div class="about-cont">	
@@ -108,7 +122,7 @@
 </div>
 </section>
 
-<section class="portfolio" id="portfolio">
+<section class="portfolio tracked" id="portfolio">
 	<div class="h3_title"><h3 class="h3">Наши работы</h3></div>
 	<div class="owl-carousel carousel-portfolio">
 		<!-- Item -->
@@ -171,7 +185,7 @@
 	</div>
 </section>
 
-<section class="uslugi" id="work">
+<section class="uslugi tracked" id="work">
 <div class="h3_title"><h3 class="h3">Мы делаем</h3></div>
 
 	<!-- Item -->
@@ -227,7 +241,7 @@
 
 </section>
 
-<section class="steps" id="steps">
+<section class="steps tracked" id="steps">
 	<div class="h3_title"><h3 class="h3">5 шагов</h3></div>
 
 <div class="steps-cont">
@@ -235,7 +249,7 @@
 	<!-- Step item -->
 	<div class="steps-item">
 		
-<div class="steps-item-logo"><i class="icon-edit"></i></div>
+<div class="steps-item-logo"><i class="icon-edit"></i><div class="logo-number">1</div></div>
 
 <div class="steps-item-text">Подача заявки</div>
 
@@ -245,7 +259,7 @@
 <!-- Step item -->
 	<div class="steps-item">
 		
-<div class="steps-item-logo"><i class="icon-credit-card"></i></div>
+<div class="steps-item-logo"><i class="icon-credit-card"></i><div class="logo-number">2</div></div>
 
 <div class="steps-item-text">Внесение предоплаты</div>
 
@@ -255,7 +269,7 @@
 <!-- Step item -->
 	<div class="steps-item">
 		
-<div class="steps-item-logo"><i class="icon-ok-circle"></i></div>
+<div class="steps-item-logo"><i class="icon-ok-circle"></i><div class="logo-number">3</div></div>
 
 <div class="steps-item-text">Утверждение дизайна</div>
 
@@ -265,7 +279,7 @@
 <!-- Step item -->
 	<div class="steps-item">
 		
-<div class="steps-item-logo"><i class="icon-laptop"></i></div>
+<div class="steps-item-logo"><i class="icon-laptop"></i><div class="logo-number">4</div></div>
 
 <div class="steps-item-text">Запуск сайта</div>
 
@@ -275,7 +289,7 @@
 <!-- Step item -->
 	<div class="steps-item">
 		
-<div class="steps-item-logo"><i class="icon-usd"></i></div>
+<div class="steps-item-logo"><i class="icon-usd"></i><div class="logo-number">5</div></div>
 
 <div class="steps-item-text">Завешение оплаты</div>
 
@@ -286,7 +300,7 @@
 
 </section>
 
-<section class="reviews" id="rew">
+<section class="reviews tracked" id="rew">
 	
 <div class="h3_title"><h3 class="h3">Отзывы клиентов</h3></div>
 
@@ -329,7 +343,7 @@
 
 </section>
 
-<section class="footer" id="feedback">
+<section class="footer tracked" id="feedback">
 	<div class="contacts">
 		<ul>
 			<li><strong>Телефон:</strong> <a href="tel:+380731571334">+38 (073) 157 13 34</a></li>
