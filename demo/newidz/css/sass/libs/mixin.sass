@@ -1,0 +1,133 @@
+//--------------- display ------------------//
+
+@mixin flex()
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+@mixin flex_wrap()
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+
+@mixin flex_align($align)
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: $align
+
+
+
+//--------------- border ------------------//
+
+@mixin border($color)
+	border: 1px solid $color
+
+@mixin border_size($size,$color)
+	border: ($size + px) solid $color
+
+@mixin border_radius($size)
+	-webkit-border-radius: $size + px
+	-moz-border-radius: $size + px
+	-ms-border-radius: $size + px
+	-o-border-radius: $size + px
+	border-radius: $size + px
+
+
+//--------------- background ------------------//
+
+@mixin bg($img,$type:jpg, $x: center, $y: center)
+	background-image: url(../../img/#{$img}.#{$type})
+	background-repeat: no-repeat
+	background-position: $x $y
+	-webkit-background-size: cover
+	background-size: cover
+
+@mixin bg_repeat($img,$type:jpg, $x: center, $y: center)
+	background-image: url(../../img/#{$img}.#{$type})
+
+@mixin bg_fix($img,$type:jpg, $x: center, $y: center)
+	background-image: url(../../img/#{$img}.#{$type})
+	background-repeat: no-repeat
+	background-position: $x $y
+
+
+
+//--------------- grid flex ------------------//
+
+$width: 100
+$columns: 12
+$padding: 10
+
+.box
+	width: 1170px
+	margin-right: auto
+	margin-left: auto
+	
+
+.flex_box,
+.flex_box_a,
+.flex_box_b
+	width: 100%
+	+flex_wrap()
+	&>[class*="flex_box-"]
+		display: block
+		padding: $padding + px
+		padding-right: $padding + px
+		padding-left: $padding + px
+
+.flex_box_b
+	+flex_align(space-between)
+
+.flex_box_a
+	+flex_align(space-around)
+
+
+
+@for $i from 1 through $columns
+	.flex_box-#{$i}
+		width: (($width/$columns) * $i) * 1%
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.box
+		width: 970px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.box
+		width: 100%
+		padding-right: $padding + px
+		padding-left: $padding + px
+
+	@for $i from 1 through $columns
+		.flex_box-md-#{$i}
+			width: (($width/$columns) * $i) * 1%
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	@for $i from 1 through $columns
+		.flex_box-sm-#{$i}
+			width: (($width/$columns) * $i) * 1%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	@for $i from 1 through $columns
+		.flex_box-xs-#{$i}
+			width: (($width/$columns) * $i) * 1%
+
+
+
