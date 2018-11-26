@@ -23,3 +23,8 @@
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.woff") format("woff"), url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.ttf") format("truetype"); }
+  @font-face {
+    font-family: "DejaVuSans";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/dejavu-sans/DejaVuSans.ttf?#iefix") format("truetype")}
