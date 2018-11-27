@@ -2988,9 +2988,7 @@ footer {
     }
   .foots .menu_foots {
     display: flex;
-    max-width: 700px;
     justify-content: space-between;
-    width: 66%;
     margin: 30px 0 30px;
     padding: 0;
     list-style-type: none;
@@ -3026,7 +3024,7 @@ footer {
     display: none; }
   .calendar header .mic,
   .calendar .foots {
-    display: flex; }
+    display: block; }
   .calendar .content {
     position: relative;
     top: initial;
@@ -4555,5 +4553,23 @@ td.td_bot_symb_r .small_shen_symb {
 }
 
 .menu_foots li {
-  margin-right: 5px;
+  margin-right: 30px;
+}
+
+footer .container-fluid .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_cont_foot {
+  display: flex;
+}
+
+.calendar .foots{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec_cont_foot {
+  margin: auto;
 }

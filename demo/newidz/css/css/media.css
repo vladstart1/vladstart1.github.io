@@ -639,6 +639,16 @@
 		margin-right: 10px;
 		margin-left: 10px;
 	}
+	.black_bg::after{
+		content: '';
+		position: absolute;
+		width: 0%;
+		height: 140%;
+		left: 0;
+		top: 37%;
+		background-color: #000;
+		z-index: -1;
+	  }
 }
 
 /* Extra Small Devices, 640 Phones */
