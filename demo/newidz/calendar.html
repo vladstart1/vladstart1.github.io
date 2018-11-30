@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/css/media.css" />
 
 </head>
-<body class="calendar">
+<body class="calendar calendar_nw">
 
 	<ul class="body_slides">
     <li></li>
@@ -122,39 +122,27 @@
 
 									<ul>
 									 	<li><a href="#">Выйти</a></li>
-									 	<li><a href="#">Редактировать профайл</a></li>
 									 	<li><a href="#">Мой архив</a></li>
-									 	<li><a href="#">Форумы или блоги</a></li>
-									 	<li><a href="#">Несколько карт бацзы</a></li>
-									 	<li><a href="#">Разница с Гринвичем: UTC +2</a></li>
 									 </ul> 
-
-									<a href="#" class="lins lins_2">JFN <img src="img/Emotes-face-smile-icon.png" alt=""></a>	
+									 <p class="raz_s_grin">Разница с Гринвичем: UTC +2</p>
+									<a href="#" class="lins lins_2">JFN <span class="smile">☺️</span></a>	
 								</div>
 
 								<img src="img/uzor1.png" alt="">
-
+								<div class="black_bg">
 								<div class="sidebar_box sidebar_box_2">
 									<h3>ОПЦИИ ОТОБРАЖЕНИЯ</h3>
 									
 									<form action="">
-										<input type="checkbox" name="" id="checkbox_1">
-										<label for="checkbox_1">Подписи на пиньинь</label>
-										<input type="checkbox" name="" id="checkbox_2">
-										<label for="checkbox_2">Подписи на русском </label>
-										<input type="checkbox" name="" id="checkbox_3">
-										<label for="checkbox_3">Шуэнкун дагуа </label>
-										<input type="checkbox" name="" id="checkbox_4">
-										<label for="checkbox_4">Найин</label>
 										<input type="checkbox" name="" id="checkbox_5">
 										<label for="checkbox_5">Столкновения + ша </label>
 
 										<div class="list_variants">
-											<input type="radio" name="radio_1" id="radio_1_1">
+											<input type="checkbox" name="radio_1" id="radio_1_1">
 											<label for="radio_1_1">месяц-год</label>
-											<input type="radio" name="radio_1" id="radio_1_2">
+											<input type="checkbox" name="radio_1" id="radio_1_2">
 											<label for="radio_1_2">день-месяц</label>
-											<input type="radio" name="radio_1" id="radio_1_3">
+											<input type="checkbox" name="radio_1" id="radio_1_3">
 											<label for="radio_1_3">день-год</label>
 										</div>
 
@@ -167,23 +155,13 @@
 										<input type="checkbox" name="" id="checkbox_9">
 										<label for="checkbox_9">Столпы года и месяца</label>
 										<input type="checkbox" name="" id="checkbox_10">
-										<label for="checkbox_10">Скрытый личный тайсуй</label>
+										<label for="checkbox_10">Скрытый личный Тайсуй</label>
 										<input type="checkbox" name="" id="checkbox_11">
-										<label for="checkbox_11">Стратагемы в Бацзы </label>
-										<input type="checkbox" name="" id="checkbox_12">
-										<label for="checkbox_12">Направление 3Ша </label>
+										<label for="checkbox_12">Направление 3 Ша </label>
 										<input type="checkbox" name="" id="checkbox_13">
-										<label for="checkbox_13">Ци Мэнь факторы (на год)</label>
-
-										<div class="list_variants">
-											<input type="checkbox" name="radio" id="checkbox_13_1">
-											<label for="checkbox_13_1">текущий год</label>
-											<input type="checkbox" name="radio" id="checkbox_13_2">
-											<label for="checkbox_13_2">следующий год</label>
-										</div>
-
+										<label for="checkbox_13">Шуэнкун Дагуа</label>
 										<input type="checkbox" name="" id="checkbox_14">
-										<label for="checkbox_14">Ци Мэнь факторы (на месяц)</label>
+										<label for="checkbox_14">Найин</label>
 									</form>
 									
 									<div class="sidebar_saves">
@@ -194,31 +172,54 @@
 								</div>
 								<div class="sidebar_box sidebar_box_3">
 
-									<h3>ОПЦИИ ОТОБРАЖЕНИЯ ДЛЯ ЦИ МЭНЬ</h3>
+									<h3>ОПЦИИ ОТОБРАЖЕНИЯ</h3>
 									
 									<form action="">
-										<input type="radio" name="" id="checkbox_15">
+										<div class="otst_fiv">
+										<input type="radio" name="subs" id="checkbox_15">
 										<label for="checkbox_15">Подписи на пиньинь</label>
-										<input type="radio" name="" id="checkbox_16">
+										<input type="radio" name="subs" id="checkbox_16">
 										<label for="checkbox_16">Подписи на русском </label>
-										<input type="radio" name="" id="checkbox_17">
+									</div>
+									<div class="otst_fiv">
+										<input type="radio" name="subs1" id="checkbox_17">
 										<label for="checkbox_17">Перемещение</label>
-										<input type="radio" name="" id="checkbox_18">
+										<input type="radio" name="subs1" id="checkbox_18">
 										<label for="checkbox_18">Полет</label>
-										<input type="radio" name="" id="checkbox_20">
+									</div>
+									<div class="otst_fiv">
+										<input type="radio" name="subs12" id="checkbox_20">
 										<label for="checkbox_20">Звезда</label>
-										<input type="radio" name="" id="checkbox_21">
+										<input type="radio" name="subs12" id="checkbox_21">
 										<label for="checkbox_21">Ju</label>
+									</div>
 										<input type="checkbox" name="" id="checkbox_19">
 										<label for="checkbox_19">Гексаграммы и Стратагемы</label>
 									</form>
 	 
-								</div>
-								<div class="sidebar_box_bottom">
-									<p>Меняя причины, 
-									<span class="tac">меняем следствия</span>
-									<b class="tar">Владимир Захаров</b></p>
-								</div>
+									
+	
+										<h3>Вариант базы Ци Мэнь</h3>
+										
+										<form action="">
+												<input type="radio" name="radio_1" id="radio_2_1">
+												<label for="radio_2_1">1 База</label>
+												<input type="radio" name="radio_1" id="radio_2_2">
+												<label for="radio_2_2">2 База</label>
+												
+										</form>
+										
+										
+											
+
+					</div>
+							</div>
+								
+							</div>
+							<div class="sidebar_box_bottom">
+								<p>Меняя причины, 
+								<span class="tac">меняем следствия</span>
+								<b class="tar">Владимир Захаров</b></p>
 							</div>
 						</div>
 
@@ -238,7 +239,7 @@
 								</div>
 								<div class="hieroglyphs_option">
 									<select name="" id="month">
-										<option value="">Отктябрь</option>
+										<option value="">Октябрь</option>
 										<option value="">Ноябрь</option>
 									</select>
 									<select name="" id="year">
@@ -267,17 +268,16 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										ПН. 1/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
-											<h3><span class="hieroglyphs_2">辰</span> 1. Осуществление</h3>
-											<p>Плохо для Лошади 19 сеть</p>
+											<h3><span class="hieroglyphs_2">辰</span> 9. Осуществление</h3>
 											<p>Плохо для Лошади 19 сеть</p>
 											<p><b>+ 1 / + 2 ( 2 5 )</b></p>
 											<a href="#" class="link_calendar">qi men</a>
@@ -295,12 +295,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										Вт. 2/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="dol_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -310,6 +310,14 @@
 											<a href="#" class="link_calendar">qi men</a>
 										</div>
 									</div>
+									<div class="hepl_list_calendar pink_hlp">
+										д/г прямое столкновение
+									</div>
+									<div class="hepl_list_calendar tran_hlp">
+										Полутеневое 
+лунное затмение 
+00:45 UT 0
+									</div>
 								</div>
 							</li>
 
@@ -318,13 +326,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										<div class="calendar_bonus">$</div>
-										Ср. 3/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="pi_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -334,6 +341,21 @@
 											<a href="#" class="link_calendar">qi men</a>
 										</div>
 									</div>
+									<div class="hepl_list_calendar pink_hlp">
+										д/г прямое столкновение
+									</div>
+									<div class="hepl_list_calendar pink_hlp">
+										д/г прямое столкновение
+									</div>
+									<div class="hepl_list_calendar">
+										Ша нессчастье годичное
+									</div>
+									<div class="hepl_list_calendar">
+										Ша нессчастье годичное
+									</div>
+									<div class="hepl_list_calendar">
+										Ша нессчастье годичное
+									</div>
 								</div>
 							</li>
 
@@ -342,13 +364,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										<div class="calendar_bonus">П<b>◼︎</b></div>
-										чт. 4/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -366,13 +387,12 @@
 							<li>
 								<div class="box_list_calendar box_list_calendar_double">
 									<div class="calendar_title">
-										пт. 5/05
-										<div class="calendar_timer">12:36</div>
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -385,7 +405,7 @@
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -394,6 +414,9 @@
 											<p><b>+ 1 / + 2 ( 2 5 )</b></p>
 											<a href="#" class="link_calendar">qi men</a>
 										</div>
+									</div>
+									<div class="hepl_list_calendar pink_hlp">
+										д/г прямое столкновение
 									</div>
 									<div class="hepl_list_calendar">
 										Годичное Ша
@@ -409,12 +432,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										Сб. 6/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -432,12 +455,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										Вс. 7/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -455,12 +478,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										пн. 8/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -478,12 +501,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										вт. 9/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -501,12 +524,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										ср. 10/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -524,12 +547,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										чт. 11/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -547,12 +570,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										пт. 12/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -570,12 +593,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										сб. 13/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -593,12 +616,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										вс. 14/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -616,12 +639,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										пн. 15/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -639,12 +662,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										вт. 16/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -662,12 +685,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										ср. 17/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -685,12 +708,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										чт. 18/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -708,12 +731,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										пт. 19/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -731,12 +754,12 @@
 							<li>
 								<div class="box_list_calendar">
 									<div class="calendar_title">
-										сб. 20/05
+										<span class="bred_l">立春</span> ПН. 1/05 <span class="bred_r">12:36</span>
 									</div>
 									<div class="box_calendar">
 										<div class="hieroglyphs">
 											<div class="numbers">734</div>
-											戊甲丁⼦辰酉
+											<span class="green_symb">戊</span>甲丁⼦辰酉
 											<div class="numbers">429</div>
 										</div>
 										<div class="desc_list_calendar">
@@ -767,7 +790,7 @@
 								</div>
 								<div class="hieroglyphs_option">
 									<select name="" id="month">
-										<option value="">Отктябрь</option>
+										<option value="">Октябрь</option>
 										<option value="">Ноябрь</option>
 									</select>
 									<select name="" id="year">
@@ -782,6 +805,8 @@
 								</div>
 
 
+
+								
 			<!-- Controls -->
 							  <a class="top_calendar_left" href="#">
 							  </a>
@@ -791,7 +816,144 @@
 							</div>
 						</div>
 						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="table_bottom_block">
+										<h3 class="table_bottom_title">ЛЕТЯЩИЕ ЗВЕЗДЫ ГОДА<br>
+												05.02-05.03</h3>
+												<table class="bottom_table">
+														<tbody><tr>
+														  <td>Ю/В</td>
+														  <td></td> 
+														  <td>Ю</td>
+															<td></td>
+															<td>Ю/З</td>
+														</tr>
+														<tr>
+																<td></td>
+																<td class="bottom_table_block"><span>9</span></td> 
+																<td class="bottom_table_block"><span>9</span></td>
+																  <td class="bottom_table_block"><span>9</span></td>
+																  <td></td>
+															  </tr>
+															  <tr>
+																	<td>В</td>
+																	<td class="bottom_table_block"><span>9</span></td> 
+																	<td class="bottom_table_block"><span>9</span></td>
+																	  <td class="bottom_table_block"><span>9</span></td>
+																	  <td>З</td>
+																  </tr>
+																  <tr>
+																		<td></td>
+																		<td class="bottom_table_block"><span>9</span></td> 
+																		<td class="bottom_table_block"><span>9</span></td>
+																		  <td class="bottom_table_block"><span>9</span></td>
+																		  <td></td>
+																	  </tr>
+																	  <tr>
+																			<td>С/В</td>
+																			<td></td> 
+																			<td>С</td>
+																			  <td></td>
+																			  <td>С/З</td>
+																		  </tr>
+													  </tbody></table>
+									</div>
+								</div>
+								<div class="col-sm-4">
+										<div class="table_bottom_block">
+											<h3 class="table_bottom_title">ЛЕТЯЩИЕ ЗВЕЗДЫ МЕСЯЦА<br>
+													05.02-05.03</h3>
+													<table class="bottom_table">
+															<tbody><tr>
+															  <td>Ю/В</td>
+															  <td></td> 
+															  <td>Ю</td>
+																<td></td>
+																<td>Ю/З</td>
+															</tr>
+															<tr>
+																	<td></td>
+																	<td class="bottom_table_block"><span>9</span></td> 
+																	<td class="bottom_table_block"><span>9</span></td>
+																	  <td class="bottom_table_block"><span>9</span></td>
+																	  <td></td>
+																  </tr>
+																  <tr>
+																		<td>В</td>
+																		<td class="bottom_table_block"><span>9</span></td> 
+																		<td class="bottom_table_block"><span>9</span></td>
+																		  <td class="bottom_table_block"><span>9</span></td>
+																		  <td>З</td>
+																	  </tr>
+																	  <tr>
+																			<td></td>
+																			<td class="bottom_table_block"><span>9</span></td> 
+																			<td class="bottom_table_block"><span>9</span></td>
+																			  <td class="bottom_table_block"><span>9</span></td>
+																			  <td></td>
+																		  </tr>
+																		  <tr>
+																				<td>С/В</td>
+																				<td></td> 
+																				<td>С</td>
+																				  <td></td>
+																				  <td>С/З</td>
+																			  </tr>
+														  </tbody></table>
+										</div>
+									</div>
+									<div class="col-sm-4">
+											<div class="table_bottom_block">
+												<h3 class="table_bottom_title">ЛЕТЯЩИЕ ЗВЕЗДЫ МЕСЯЦА<br>
+														05.02-05.03</h3>
+														<table class="bottom_table">
+																<tbody><tr>
+																  <td>Ю/В</td>
+																  <td></td> 
+																  <td>Ю</td>
+																	<td></td>
+																	<td>Ю/З</td>
+																</tr>
+																<tr>
+																		<td></td>
+																		<td class="bottom_table_block"><span>9</span></td> 
+																		<td class="bottom_table_block"><span>9</span></td>
+																		  <td class="bottom_table_block"><span>9</span></td>
+																		  <td></td>
+																	  </tr>
+																	  <tr>
+																			<td>В</td>
+																			<td class="bottom_table_block"><span>9</span></td> 
+																			<td class="bottom_table_block"><span>9</span></td>
+																			  <td class="bottom_table_block"><span>9</span></td>
+																			  <td>З</td>
+																		  </tr>
+																		  <tr>
+																				<td></td>
+																				<td class="bottom_table_block"><span>9</span></td> 
+																				<td class="bottom_table_block"><span>9</span></td>
+																				  <td class="bottom_table_block"><span>9</span></td>
+																				  <td></td>
+																			  </tr>
+																			  <tr>
+																					<td>С/В</td>
+																					<td></td> 
+																					<td>С</td>
+																					  <td></td>
+																					  <td>С/З</td>
+																				  </tr>
+															  </tbody></table>
+											</div>
+										</div>
+							</div>
+						</div>
 					</div>
+
+
+
+					
 				</div>
 
 
@@ -809,37 +971,44 @@
 
 <!-- /////////////////////// -->
 
-	<footer>
-		<div class="container-fluid">
-			<div class="row">
+<footer>
+	<div class="container-fluid">
+		<div class="row">
 
-				<div class="foots flex_box">
-					<div class="logo_foot">
-						<img src="img/BaZi_LogoW.svg" alt="">					
-					</div>
-
-					<ul class="menu_foots">
-						<li><a href="#">ГЛАВНАЯ</a></li>
-						<li><a href="#">БА-ЦЗЫ</a></li>
-						<li class="active">КАЛЕНДАРЬ</li>
-						<li><a href="#">ЦИ МЭНЬ</a></li>
-						<li><a href="#">ЛЕТЯЩИЕ ЗВЕЗДЫ</a></li>
-						<li><a href="#">8 ДВОРЦОВ</a></li>
-						<li><a href="#">Видео иероглифов</a></li>
-						<li><a href="#">Шуэнкун дагуа</a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#">Вопросы</a></li>
-						<li><a href="#">Служба поддержки</a></li>
-					</ul>
+			<div class="foots flex_box">
+				<div class="first_cont_foot">
+						<div class="logo_foot">
+								<img src="img/BaZi_LogoW.svg" alt="">					
+							</div>
+		
+							<ul class="menu_foots">
+								<li><a href="#">Видео иероглифов</a></li>
+								<li><a href="#">Вопросы</a></li>
+								<li><a href="#">Служба поддержки</a></li>
+								<li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+							</ul>
 				</div>
-
-
-				<div class="pause"></div>
-				<p>© Ba-zi.ru. Все права защищены 2008-2017</p>
-				<div class="mic"></div>
+				<div class="sec_cont_foot">
+						<div class="soc_btn">
+								<a href="#"><img src="./img/socbut/fb.svg" alt=""></a>
+								<a href="#"><img src="./img/socbut/tw.svg" alt=""></a>
+								<a href="#"><img src="./img/socbut/tmblr.svg" alt=""></a>
+								<a href="#"><img src="./img/socbut/in.svg" alt=""></a>
+								<a href="#"><img src="./img/socbut/inst.svg" alt=""></a>
+								<a href="#"><img src="./img/socbut/vk.svg" alt=""></a>
+								<a href="#"><img src="./img/socbut/ggl.svg" alt=""></a>
+							</div>
+				</div>
 			</div>
+
+
+			
 		</div>
-	</footer>
+		<div class="pause"></div>
+			<p>© Ba-zi.ru. Все права защищены 2008-2017</p>
+			<div class="mic"></div>
+	</div>
+</footer>
 
 
 	<div class="hidden"></div>
