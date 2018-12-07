@@ -196,12 +196,15 @@
 		margin-right: 0;
 		margin-left: 0;
 	}
+	.opisli{
+		margin: 0 40px;
+	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 1150px) {
 
 	.tablelist{
-		max-width: 770px;
+		max-width: 769px;
 	}
 	.tablelist .table_item {
 		font-size: 10px;
@@ -270,7 +273,26 @@
 	.btn_qi {
 		width: 90px;
 	}
+	.opisli{
+		margin: 0 20px;
+	}
+	.calendar_nw .black_bg{
+		height: 84%;
+		padding-top: 20px;
+		background-color: #000;
+	  }
 }
+
+/* @media only screen and (max-width : 1104px) {
+	.block_top_calendar .top_calendar_left {
+		margin-left: 14%;
+	}
+	.block_top_calendar .top_calendar_right {
+		margin-right: 14%;
+	}
+} */
+
+
 
 @media only screen and (max-width : 960px) {
 	.center_bot_symb {
@@ -493,6 +515,9 @@
 	}
 	td.td_bot_symb_r .small_shen_symb{
 		font-size: 10px;
+	}
+	.opisli{
+		margin: 0 20px;
 	}
 }
 
@@ -727,6 +752,15 @@
 		flex-wrap: wrap;
 	}
 	.menu_box_2 .menu li:nth-child(4) {
+		border-left: 0;
+	}
+	.menu_box_2 .menu li:nth-child(7) {
+		border-left: 0;
+	}
+	.menu_box_2 .menu li:nth-child(10) {
+		border-left: 0;
+	}
+	.menu_box_2 .menu li:nth-child(13) {
 		border-left: 0;
 	}
 	.sidebar {
@@ -1235,6 +1269,8 @@
 		position: initial;
 	}
 }
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 369px) {
 	.form_box .form_box_bg .w_2,
@@ -1276,6 +1312,15 @@
 @media only screen and (max-width : 320px) {
 
 }
+@media only screen and (max-width : 1279px) {
+	.calendar_nw .black_bg{
+		height: 80%;
+		padding-top: 20px;
+		background-color: #000;
+	  }
+}
+
+
 
 
 /*==========  Mobile First Method  ==========*/
@@ -1503,4 +1548,147 @@
 	.soc_btn {
 		margin: 30px auto;
 	}
+}
+
+@media only screen and (max-width : 1020px) {
+	.calendar_nw .black_bg{
+		height: 84%;
+	}
+}
+@media only screen and (max-width : 892px) {
+	.calendar_nw .black_bg{
+		height: 87%;
+	}
+}
+
+
+@media only screen and (max-width: 1198px) {
+    .content_block .right_block div.hidden_block {
+		display: flex;
+	  }
+    .time_table {
+      display: none;
+    }
+    .top-buttons-block{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+	}
+	
+	.buttons-right .cal_date {
+		margin-left: 0;
+	}
+
+	.buttons-black:first-child {
+		margin-left: -50px;
+	}
+
+	.buttons-black:last-child {
+		margin-left: 45px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.nw_cal_day .top-buttons-block {
+	  margin-top: 0px;
+	}
+	.nw_cal_day .content_block {
+		padding: 20px 0;
+	}
+	.nw_cal_day .opisli {
+		margin: 0 30px;
+	}
+}
+
+@media only screen and (max-width: 718px) {
+	.buttons-black:first-child {
+		margin-left: 0px;
+	}
+	.top-buttons-block {
+		flex-direction: column-reverse;
+	}
+	.buttons-black:last-child {
+		margin-left: 0px;
+	}
+	.buttons-left, .buttons-right {
+		justify-content: center;
+	}
+	.new-string {
+		width: 100%;
+	  }
+}
+
+@media only screen and (max-width: 614px) {
+
+	.cal_date {
+		flex-direction: column;
+	}
+
+	.cal_date span:last-child {
+		margin: 10px 0;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+	.buttons-black {
+		width: 115px;
+		margin-left: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 987px) {
+	.content-bar-tables {
+		flex-direction: column;
+	}
+	.table_main:first-child {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 923px) {
+	.nw_cal_day .content_block{
+		padding: 20px 0;
+	}
+}
+@media only screen and (max-width: 987px) {
+	.nw_cal_day .black_bg {
+		height: 91%;
+	}
+	.buttons-black:first-child{
+		margin-left: 0;
+	}
+	.buttons-left, .buttons-right {
+		justify-content: center;
+	}
+	.new-string {
+		width: 100%;
+	}
+	.buttons-black:last-child {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 1153px){
+.eight .black_bg {
+height: 83%;
+}
+}
+@media only screen and (max-width: 1001px){
+.bzi .black_bg {
+	height: 93%;
+  }
+}
+@media only screen and (max-width: 835px){
+	.ierog .black_bg {
+		height: 73%;
+	  }
+}
+@media only screen and (max-width: 921px){
+.polit .black_bg {
+	height: 80%;
+  }
+
 }

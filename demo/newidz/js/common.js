@@ -81,5 +81,28 @@
 		$(this).parents('.spoiler-wrap').toggleClass("active").toggleClass('closed').find('.spoiler-body').slideToggle();
 	})
 	
+if($.magnificPopup){
+	$('.popup-with-zoom-anim').magnificPopup({
+		
+		showCloseBtn: false,
+		type: 'inline',
 
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in',
+	});
+
+	$(document).on('click', '.close_btn', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+}
 });
