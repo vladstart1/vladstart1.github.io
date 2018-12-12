@@ -2763,6 +2763,7 @@ margin-right: 50px;
     .form_box .form_box_bg .sex .female {
       margin-left: 8.4%; }
     .form_box .form_box_bg input[type="date"],
+    .form_box .form_box_bg input[name="date"],
     .form_box .form_box_bg input[type="time"] {
       display: inline-block;
       height: 20px;
@@ -2774,7 +2775,7 @@ margin-right: 50px;
       color: #000;
       background-color: #ccc;
       border: none; }
-    .form_box .form_box_bg input[type="date"] {
+    .form_box .form_box_bg input[type="date"], .form_box .form_box_bg input[type="date"] {
       width: 112px;
       margin-bottom: 0; }
     .form_box .form_box_bg input[type="time"] {
@@ -4841,7 +4842,7 @@ div.tran_hlp {
 }
 
 .cal_date input {
-  padding-left: 3px!important;
+  padding-left: 3px;
 }
 
 .close_btn {
@@ -5101,7 +5102,6 @@ p.mb_f {
 }
 
 .pl_dvad {
-  padding-left: 20px;
   margin-bottom: 10px;
   font-size: 12px;
 }
@@ -5116,6 +5116,11 @@ p.mb_f {
   border-radius: 0;
   padding: 10px 0;
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.rhome .rh_netud .btn:hover{
+  color: #ea5e68;
 }
 
 .btnwrap {
@@ -5129,5 +5134,44 @@ p.mb_f {
 }
 
 .menu_prim .menu_box_2 {
-  margin-bottom: 58px;
+  margin-bottom: 80px;
+}
+
+.rh_netud {
+  letter-spacing: 0.1em;
+}
+
+.propusk {
+  width: 100%;
+}
+
+.admin_menu li:nth-child(11) {
+  border-left: none;
+}
+.admin_menu li:nth-child(20) {
+  border-left: none;
+}
+
+div.cal_date input {
+  width: 120px;
+  background-color: #cccccc;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #000;
+}
+
+.div.cal_date input[name="date"]::placeholder{
+  color: #000;
+  text-align: center;
+}
+
+.form_box .form_box_bg input[type="time"] {
+  padding: 0;
+  padding-left: 23px;
+}
+
+.form_box .form_box_bg input[name="date"]::placeholder{
+  color: #000;
 }

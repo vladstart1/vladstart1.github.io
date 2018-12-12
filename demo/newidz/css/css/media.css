@@ -743,7 +743,7 @@
 
 /* Extra Small Devices, 640 Phones */
 @media only screen and (max-width : 767px) {
-	.menu_box_2 .menu {
+	/* .menu_box_2 .menu {
 		max-width: 450px;
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
@@ -762,7 +762,7 @@
 	}
 	.menu_box_2 .menu li:nth-child(13) {
 		border-left: 0;
-	}
+	} */
 	.sidebar {
 		padding-bottom: 0;
 	}
@@ -1258,6 +1258,12 @@
 		height: 50px;
 		margin-bottom: 15px;
 	}
+	.info_box .nes_new_form input, 
+	.info_box .nes_new_form button {
+		height: 20px;
+		margin-bottom: 15px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -1629,6 +1635,13 @@
 		margin: 10px 0;
 	}
 
+	.rncld_date {
+		flex-direction: row;
+	}
+
+	.rncld_date span:last-child {
+		margin:0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -1691,4 +1704,84 @@ height: 83%;
 	height: 80%;
   }
 
+}
+@media only screen and (max-width: 800px){
+	.admin_menu li:nth-child(11) {
+		border-left: 1px solid #fff;
+	  }
+	  .admin_menu li:nth-child(20) {
+		border-left: 1px solid #fff;
+	  }
+
+.propusk {
+	display: none;
+}
+.propuskmd {
+	width: 100%;
+}
+.admin_menu li:nth-child(26){
+	border-left: none;
+}
+.admin_menu li:nth-child(9) {
+	border-left: none;
+  }
+.admin_menu li:nth-child(16) {
+	border-left: none;
+  }
+.admin_menu li:nth-child(22) {
+	border-left: none;
+  }
+}
+@media only screen and (max-width: 630px){
+	.admin_menu li:last-child{
+		border-left: 1px solid #fff;
+	}
+	.admin_menu li:nth-child(9) {
+		border-left: 1px solid #fff;
+	  }
+	.admin_menu li:nth-child(16) {
+		border-left: 1px solid #fff;
+	  }
+	.admin_menu li:nth-child(22) {
+		border-left: 1px solid #fff;
+	  }
+	  .propuskmd {
+		display: none;
+	}
+	.propuskxs {
+		width: 100%;
+	}
+	.admin_menu li:nth-child(5) {
+		border-left: none;
+	  }
+	.admin_menu li:nth-child(9) {
+		border-left: none;
+	  }
+	.admin_menu li:nth-child(14) {
+		border-left: none;
+	  }
+	.admin_menu li:nth-child(18) {
+		border-left: none;
+	  }
+	.admin_menu li:nth-child(24) {
+		border-left: none;
+	  }
+}
+
+@media only screen and (max-width: 426px){
+	.menu li {
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+.nxt_str {
+	width: 100%;
+}
+.menu_box_2 .menu {
+	flex-wrap: wrap;
+}
+.def_mnu li:nth-child(5) {
+	border-left: none;
+  }
 }
