@@ -1119,10 +1119,10 @@
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 425px) {
-	.menu_box_2 .menu {
+@media only screen and (max-width : 470px) {
+	/* .menu_box_2 .menu {
 		max-width: 350px;
-	}
+	} */
 	.form_box .form_box_bg .w_2 {
 		/*display: block;
 		width: 60%;*/
@@ -1140,13 +1140,16 @@
 	.menu_box_2 .menu li:nth-child(4) {
 		border-left: 1px solid #fff;
 	}
-	.menu_box_2 .menu li:nth-child(3),
+	/* .menu_box_2 .menu li:nth-child(3), */
 	.menu_box_2 .menu li:nth-child(5) {
 		border-left: 0;
 	}
 	.menu_box .menu li p,
 	.info  {
 		display: none;
+	}
+	.delpadd {
+		padding: 0;
 	}
 }
 
@@ -1196,7 +1199,15 @@
 	}
 	.ba_czi .login,
 	.ci_men .login {
-		display: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.login img {
+		margin: 0 15px;
+		margin-bottom: 14px;
+
 	}
 	.sidebar .sidebar_nav .avatar {
 		margin-right: 20px;
@@ -1263,7 +1274,9 @@
 		height: 20px;
 		margin-bottom: 15px;
 	}
-
+	.info_box form input.datepicker{
+	margin-bottom: 0;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1462,16 +1475,16 @@
 	}
 }
 
-@media only screen and (max-width : 832px) {
-.crd_f_box {
-	flex-direction: column;
-}
-.hsmdev {
-	display: none;
-}
-.crd_f_box .form_box:first-child {
-	margin-bottom: 20px;
-}
+@media only screen and (max-width : 960px) {
+	.hsmdev {
+		display: none;
+	}
+	.crd_f_box {
+		flex-direction: column;
+	}
+	.crd_f_box .form_box:first-child {
+		margin-bottom: 20px;
+	}
 }
 
 @media only screen and (max-width : 995px) {
@@ -1766,12 +1779,6 @@ height: 83%;
 	.admin_menu li:nth-child(24) {
 		border-left: none;
 	  }
-}
-
-@media only screen and (max-width: 426px){
-	.menu li {
-		width: 100px;
-	}
 }
 
 @media only screen and (max-width: 600px){

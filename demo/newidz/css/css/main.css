@@ -5175,3 +5175,8 @@ div.cal_date input {
 .form_box .form_box_bg input[name="date"]::placeholder{
   color: #000;
 }
+
+.btn_rasbes {
+  padding: 15px 0px!important;
+  width: 180px!important;
+}
