@@ -4450,7 +4450,8 @@ form.nes_new_form label {
 }
 
 form.nes_new_form input[type="time"] {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
  
@@ -5179,4 +5180,8 @@ div.cal_date input {
 .btn_rasbes {
   padding: 15px 0px!important;
   width: 180px!important;
+}
+
+.nes_new_form label.time_sun, .nes_new_form .time_pecin {
+  margin-left: 9px;
 }
