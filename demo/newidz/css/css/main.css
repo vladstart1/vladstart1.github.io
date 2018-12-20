@@ -1,4 +1,7 @@
 @charset "UTF-8";
+strong{
+  font-family: Oswaldmedium;
+}
 .box {
   width: 1170px;
   margin-right: auto;
@@ -342,9 +345,9 @@ td.pmz {
   padding: 0 45px!important;
 }
 
-.lpmz {
+/* .lpmz {
   padding: 5px 33px!important;
-}
+} */
 .pmzm {
   padding: 5px 67px!important;
 }
@@ -1854,7 +1857,7 @@ section {
   display: -o-flex;
   display: flex;
   width: 362px;
-  max-height: 120px;
+  /* max-height: 120px; */
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
@@ -2727,6 +2730,7 @@ margin-right: 50px;
     height: 100%;
     color: #fff;
     letter-spacing: 1.2px;
+    text-transform: uppercase;
   }
     .info_box .menu_info_box a:hover {
       color: #fff; }
@@ -2940,7 +2944,7 @@ footer {
     text-align: center; }
   footer .pause {
     position: absolute;
-    bottom: 35px;
+    bottom: 47px;
     left: 30px;
     display: block;
     width: 34px;
@@ -2972,7 +2976,7 @@ footer {
       background-size: cover; }
   footer .mic {
     position: absolute;
-    bottom: 30px;
+    bottom: 43px;
     right: 30px;
     display: block;
     width: 27px;
@@ -3738,7 +3742,7 @@ footer {
         }
 
         .calendar_box .form_box_bg input[type="time"] {
-          width: 60px;
+          width: 80px;
           padding: 0;
         }
 
@@ -4127,8 +4131,8 @@ td.td_p_cus {
 
 .date_inp_prf svg {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -3px;
+  right: -25px;
 }
 
 .sex_prof {
@@ -5135,7 +5139,7 @@ p.mb_f {
 }
 
 .menu_prim .menu_box_2 {
-  margin-bottom: 80px;
+  margin-bottom: 109px;
 }
 
 .rh_netud {
@@ -5184,4 +5188,93 @@ div.cal_date input {
 
 .nes_new_form label.time_sun, .nes_new_form .time_pecin {
   margin-left: 9px;
+}
+
+.ft_calculator td.lpmz {
+  padding: 0;
+}
+
+.ft_calculator td.lpmz a {
+  display:block;
+  padding: 5px 33px;
+  color: #000;
+}
+
+.ft_calculator td.lpmz a:hover{
+  background: #f5f5f5;
+}
+
+.cal_date input[name="date"] {
+  display: inline-block;
+    height: 20px;
+    padding: 0 10px;
+    line-height: 20px;
+    font-size: 11px;
+    font-family: "Oswaldlight", sans-serif;
+    text-align: center;
+    color: #000;
+    background-color: #e6e6e6;
+    border: none;
+}
+
+.cal_date input[type="time"] {
+  padding: 0;
+    padding-left: 23px;
+    width: 80px;
+    margin-bottom: 0;
+}
+
+.cal_date input[name="date"]::placeholder {
+  color: #000;
+}
+
+.ml_fal a.btn_black {
+  margin-left: 10px;
+}
+
+a.btn_black:hover {
+  color: #ea5e68;
+}
+
+a.btn_black_big:hover {
+  color: #ea5e68;
+}
+
+.dob_but {
+  display: flex;
+}
+
+.dob_but li:first-child {
+  margin-right: 10px;
+}
+
+.dob_but li:last-child {
+  margin-left: 10px;
+}
+
+.reg_mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reg_mail input[type="email"] {
+  height: 20px;
+    padding: 0 10px;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "Oswaldlight", sans-serif;
+    text-align: left;
+    color: #000;
+    background-color: #ccc;
+    border: none;
+    min-width: 280px;
+    width: initial;
+    margin: 0;
+}
+
+.reg_mail label {
+  height: initial;
+  margin: 0;
+  line-height: 20px;
 }
