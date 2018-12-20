@@ -1915,3 +1915,29 @@ footer {
 		margin-top: 5px;
 	}
 }
+
+@media only screen and (max-width : 489px) {
+
+.arch .content_block {
+padding: 20px 5px;
+}
+
+.arch .select_filter_card {
+	flex-wrap: wrap;
+}
+
+.arch .nxt_str_a {
+	width: 100%;
+}
+
+.arch .btn_spot {
+	margin-top: 10px;
+}
+
+}
+
+@media only screen and (max-width : 400px) {
+	.arch_tbl {
+		font-size: 12px;
+	}
+}
