@@ -162,7 +162,7 @@ tr>td.ff_or {
   margin-bottom: 20px;
   color: #4a4a4a;
   position: relative;
-  z-index: 23;
+  z-index: 1;
   font-size: 12px;
 }
 
@@ -1651,7 +1651,7 @@ html {
 
 body {
   min-height: 100%;
-  padding-bottom: 500px;
+  /* padding-bottom: 500px; */
   font-family: "Oswaldlight", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -2009,9 +2009,9 @@ section {
   max-height: 0; }
 
 .content {
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: 80px; }
+  bottom: 0px; }
 
 .sidebar_nav {
   position: relative; }
@@ -2601,6 +2601,7 @@ margin-right: 50px;
   line-height: 16px;
   letter-spacing: 1.4px; 
   background: #000;
+  z-index: 40;
 }
   .sidebar_box_bottom p {
     margin: 0; }
@@ -3013,6 +3014,7 @@ footer {
     columns: 4;
     text-transform: uppercase;
     flex-wrap: wrap;
+    flex-grow: 1;
    }
     .foots .menu_foots li {
       font-size: 12px;
@@ -4064,6 +4066,7 @@ td.td_p_cus {
 .pr_avatar {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .pr_avatar a {
@@ -4539,6 +4542,7 @@ td.td_bot_symb_r .small_shen_symb {
 
 .sidebar_flex_box {
   position: relative;
+  z-index: 24;
 }
 
 .black_bg{
@@ -5122,6 +5126,7 @@ p.mb_f {
   padding: 10px 0;
   text-transform: uppercase;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .rhome .rh_netud .btn:hover{
@@ -5277,4 +5282,96 @@ a.btn_black_big:hover {
   height: initial;
   margin: 0;
   line-height: 20px;
+}
+
+.ci_men .w_2 {
+  margin-bottom: 0;
+}
+
+.ci_men .form_box .form_box_bg {
+  margin-bottom: 10px;
+  padding: 15px 16px;
+}
+
+.lins:hover {
+  background-color: rgba(234, 94, 104, 0.2)
+}
+
+.arch_tbl tr td:first-child{
+  background-color: #fdf4f4;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.arch_mnu .b3 button {
+  margin-right: 0;
+  width: 180px;
+}
+
+.arch_mnu .h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Oswaldmedium;
+  font-size: 14px;
+  letter-spacing: 0.39px;
+}
+
+.arch_mnu {
+  /* display: flex; */
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.arch_mnu select {
+  width: 180px;
+  background-color: #f0f0f0;
+}
+
+.arch_mnu p {
+  margin-top: 10px;
+  color: #fff;
+  font-family: Oswaldlight;
+}
+
+.arch_mnu input {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+.eight .block_pop .b3 button {
+  margin-right: 0;
+}
+
+.eight .block_pop {
+  padding: 40px 48px;
+}
+
+.arch_button_w:hover {
+  color: #ea5e68;
+}
+.arch_button_r:hover {
+  color: #ea5e68;
+}
+.arch_button_d:hover {
+  color: #ea5e68;
+}
+
+.qi_men_n .block_pop {
+  padding: 40px 22px;
+}
+
+.qi_men_n .rncld_date{
+  margin-top: 15px;
+}
+
+.qi_men_n .form_box_bg + input[type="submit"] {
+  margin: 0;
+  width: 100%;
+}
+
+.mf_bl {
+  display: flex;
+  flex-wrap: wrap;
 }
