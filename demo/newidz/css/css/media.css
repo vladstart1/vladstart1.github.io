@@ -404,6 +404,19 @@
 }
 
 @media only screen and (max-width : 607px) {
+
+	.qi_mn_d_f .center_td_tabl {
+		font-family: Oswaldmedium;
+		font-size: 14px;
+	}
+
+	.qi_mn_d_f .r_num_cen .num_abs {
+		top: -48px;
+	  }
+	  .qi_mn_d_f .l_num_cen .num_abs {
+		top: -48px;
+	  }
+
 	.center_cont th {
 		width: 63px;
 	}
@@ -525,6 +538,12 @@
 }
 
 @media only screen and (max-width : 464px) {
+	.qi_mn_d_f .r_num_cen .num_abs {
+		top: -43px;
+	  }
+	  .qi_mn_d_f .l_num_cen .num_abs {
+		top: -43px;
+	  }
 	.de_block {
 		font-size: 6px;
 		width: 15px;
@@ -657,7 +676,7 @@ background-color: rgba(0,0,0,0.2);
 		padding-bottom: 100px;
 	} */
 	body.ci_men {
-		padding-bottom: 20px;
+		padding-bottom: 419px;
 	}
 	/*.menu_box_2 .menu {
 		margin-bottom: 40px;
@@ -823,6 +842,9 @@ background-color: rgba(0,0,0,0.2);
 
 /* Extra Small Devices, 640 Phones */
 @media only screen and (max-width : 768px) {
+	.black_bg{
+		padding-top: 0!important;
+	}
 	.foots .logo_foot {
 		margin-right: 45px;
 		margin-left: 40px;
@@ -882,6 +904,7 @@ background-color: rgba(0,0,0,0.2);
 		padding: 16px 40px;
 		padding-bottom: 0;
 		justify-content: space-between;
+		position: relative;
 	}
 	.sidebar .sidebar_info .sidebar_box_1 {
 		-webkit-order: 3;
@@ -889,6 +912,8 @@ background-color: rgba(0,0,0,0.2);
 		-ms-order: 3;
 		-o-order: 3;
 		order: 3;
+		text-align: right;
+		width: 141px;
 	}
 	/* .sidebar .sidebar_info .sidebar_box_2 {
 		-webkit-order: 1;
@@ -998,7 +1023,7 @@ background-color: rgba(0,0,0,0.2);
 		font-family: Oswald;
 		padding-top: 3px;
 		top: -28px;
-		left: 10px;
+		left: 0px;
 		padding: 3px 0;
 		position: absolute;
 	} 
@@ -1078,9 +1103,12 @@ background-color: rgba(0,0,0,0.2);
 	}
 }
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-	.calendar .content_block {
+@media only screen and (max-width : 600px) {
+	.voprosi .calendar .content_block {
 		padding-top: 70px;
+	}
+	.stars .content_block {
+		padding-top: 20px;
 	}
 	.left , .right{
 		float: none;
@@ -1106,6 +1134,9 @@ background-color: rgba(0,0,0,0.2);
 	}
 	.login {
 		margin-bottom: 21px;
+	}
+	.ierog .content_block {
+		padding: 25px 0px;
 	}
 }
 
@@ -1259,13 +1290,27 @@ background-color: rgba(0,0,0,0.2);
 	}
 }
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 375px) {
-	body {
-		padding-bottom: 35px;
-		/* padding-bottom: 85vw; */
+@media only screen and (max-width : 410px) {
+	.login p {
+	
+		margin: 0;
+		margin-top: 20px;
+	}
+	.login img {
+		margin: 20px;
+		margin-bottom: 0;
+	}
+	.login {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	body.ci_men,body {
+		padding-bottom: 364px;
 	}
 	.form_box .form_box_bg {
-		padding: 10px 7px 5px;
+		padding: 10px 14px 5px;
 		margin-bottom: 14px;
 	}
 	.form_box .form_box_bg .lins {
@@ -1284,7 +1329,7 @@ background-color: rgba(0,0,0,0.2);
 	}
 	footer .mic,
 	footer .pause {
-		bottom: 0;
+		bottom: 4px;
 	}
 	.info_box form input, 
 	.info_box form button {
@@ -1299,8 +1344,8 @@ background-color: rgba(0,0,0,0.2);
 	.info_box form input.datepicker{
 	margin-bottom: 0;
 }
-.ci_men .content {
-	bottom: 30px;
+.ci_men .content, .content {
+	bottom: 50px;
 }
 .ci_men .form_box .form_box_bg .w_2{
 	margin: 0;
@@ -1451,11 +1496,11 @@ background-color: rgba(0,0,0,0.2);
 		padding: 5px 0px;
 		width: 83px;
 	}
-	.full_width_t {
+	.ml_mins {
 		margin-left: -10px;
 	}
 	.gr_bg > span::before {
-		left: -11px;
+		width: 154px;
 	}
 	
 }
@@ -1919,25 +1964,13 @@ footer {
 
 }
 
-@media only screen and (max-width: 375px){
-.login {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 15px;
-	}
+@media only screen and (max-width: 410px){
+
 	.indx .login,.bczi_login .login{
 		display: block;
 	}
-.login p {
-	
-		margin: 0;
-		margin-top: 20px;
-	}
-.login img {
-		margin: 20px;
-		margin-bottom: 0;
-	}
+
+
 	.indx .login img,.bczi_login .login img {
 		margin: 0 auto 14px;
 	}
@@ -2023,7 +2056,7 @@ padding: 20px 0;
 	margin: 10px;
 }
 
-.prof .required_p, .prof h3 {
+.prof .required_p, .prof h3.h3 {
 	margin-left: 20px;
 }
 .exp_prof {
@@ -2056,5 +2089,55 @@ display: none;
 }
 .first_cont_foot {
 	width: 100%;
+}
+}
+
+@media only screen and (max-width : 375px) {
+	.block_top_calendar .top_calendar_box{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option{
+		margin-top: 15px;
+	}
+	.content_block .list_calendar li .box_list_calendar_double {
+	width: 258px;
+	}
+	}
+
+@media only screen and (max-width : 486px) {
+	.qi_mn_d_f .content_block {
+		padding: 78px 0px;
+	}
+}
+@media only screen and (max-width : 685px) {
+.sbposa {
+	position: absolute;
+	right: 20px;
+	top: 230px;
+}
+.nw_cal_day .sidebar .sidebar_info .sidebar_flex_box {
+	padding-bottom: 45px;
+}
+.calendar_nw .sidebar .sidebar_info .sidebar_flex_box {
+	padding-bottom: 110px;
+}
+}
+@media only screen and (max-width : 400px) {
+.sidebar_box {
+	width: 140px;
+}
+.sidebar_btn a{
+	width: 140px;
+	margin: 10px auto;
+}
+.sidebar_sel_inp input {
+    width: 69px;
+}
+.nw_cal_day .sidebar .sidebar_info .sidebar_flex_box {
+	padding-bottom: 110px;
+}
+.calendar_nw .sidebar .sidebar_info .sidebar_flex_box {
+	padding-bottom: 170px;
 }
 }
