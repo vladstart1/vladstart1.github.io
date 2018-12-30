@@ -144,7 +144,7 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1120px) {
 	.block_top_calendar .top_calendar_left {
 		margin-left: 4%;
 	}
@@ -1291,6 +1291,9 @@ background-color: rgba(0,0,0,0.2);
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 410px) {
+	body.bczi_login {
+		padding-bottom: 395px;
+	  }
 	.login p {
 	
 		margin: 0;
@@ -1486,9 +1489,9 @@ background-color: rgba(0,0,0,0.2);
 }
 
 @media only screen and (max-width : 768px) {
-	.table_main{
+	/* .table_main{
 		margin-right: 0;
-	}
+	} */
 }
 
 @media only screen and (max-width : 456px) {
@@ -1715,6 +1718,10 @@ background-color: rgba(0,0,0,0.2);
 		margin-left: 45px;
 	}
 
+	.rchnesc .buttons-black:last-child {
+		margin-left: 0px;
+	}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1788,9 +1795,9 @@ background-color: rgba(0,0,0,0.2);
 }
 
 @media only screen and (max-width: 987px) {
-	.content-bar-tables {
+	/* .content-bar-tables {
 		flex-direction: column;
-	}
+	} */
 	.table_main:first-child {
 		margin-bottom: 20px;
 	}
@@ -2130,6 +2137,7 @@ display: none;
 .sidebar_btn a{
 	width: 140px;
 	margin: 10px auto;
+	font-size: 10px;
 }
 .sidebar_sel_inp input {
     width: 69px;
@@ -2141,3 +2149,13 @@ display: none;
 	padding-bottom: 170px;
 }
 }
+
+@media only screen and (max-width: 639px) {
+    .content-bar-tables {
+      flex-direction: column;
+    }
+    .table_main {
+      margin: 0!important;
+      margin-bottom: 20px!important;
+    }
+  }

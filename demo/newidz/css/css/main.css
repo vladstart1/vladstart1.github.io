@@ -298,7 +298,7 @@ td.bg_gr_bd_b_no_l {
 }
 
 .ft_calculator {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .top_content_block_right {
@@ -1505,15 +1505,7 @@ text-align: center;
 
 .flex_box-12 {
   width: 100%; }
-  @media only screen and (max-width: 667px) {
-    .content-bar-tables {
-      flex-direction: column;
-    }
-    .table_main {
-      margin: 0!important;
-      margin-bottom: 20px!important;
-    }
-  }
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2387,7 +2379,7 @@ section {
           width: 300px;
           flex-shrink: 0;  /* запрещаем сужение */
 flex-grow: 0;
-margin-right: 50px;
+margin-right: 35px;
         }
 
         .pink{
@@ -5033,6 +5025,7 @@ p.mb_f {
 }
 .polit .content_block {
   padding: 0px 50px;
+  padding-bottom: 20px;
 }
 .bzi .content_block {
   padding: 20px;
@@ -5409,12 +5402,12 @@ a.btn_black_big:hover {
 }
 
 .stars .block_pop {
-  padding: 40px 35px;
+  padding: 40px 48px;
   padding-bottom: 25px;
 }
 
 body.menu_prim{
-  padding-bottom: 312px;
+  padding-bottom: 322px;
 }
 
 .qi_mn_d_f .tablelist .table_item {
@@ -5456,4 +5449,20 @@ body.menu_prim{
   height: 58%;
   padding-top: 20px;
   background-color: #000;
+}
+
+.ci_men .born_map {
+  margin-bottom: 0;
+}
+
+body.bczi_login {
+  padding-bottom: 416px;
+}
+
+.qi_men_n .cal_main_left span {
+  text-transform: uppercase;
+}
+
+.stars .block_pop .b3 button {
+  margin-right: 0;
 }
