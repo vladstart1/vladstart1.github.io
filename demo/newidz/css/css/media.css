@@ -2159,3 +2159,15 @@ display: none;
       margin-bottom: 20px!important;
     }
   }
+  @media only screen and (max-width: 375px) {
+  .change_table{
+	  display: flex;
+	  flex-direction: column;
+  }
+  .ms_podv {
+	  display: none;
+  }
+  .change_table .change_table_link {
+	  margin-bottom: 5px;
+  }
+  }
